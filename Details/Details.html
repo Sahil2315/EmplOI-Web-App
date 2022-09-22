@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Details</title>
+</head>
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+        body,html{
+            background-color: rgb(226, 241, 243);
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+}
+        #empid{
+            position: absolute;
+            left: 0;
+            top: 5%;
+            padding: 10px;
+            width: 250px;
+            font-size: 20px;
+            background-color: rgb(196, 229, 229);
+            box-shadow: 3px 3px 3px rgb(100, 100, 200);
+        }
+
+        #lefter{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            margin-left: 5%;
+            align-items: center;
+        }
+        #lefter span{
+            margin-top: 10px;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 100%;
+            align-self: center;
+        }
+        #lefter svg{
+            border-radius: 30px;
+        }
+        #righter{
+            margin-top: 4%;
+            width: 50%;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+            align-items: center;
+        }
+        #righter span{
+            margin-top: 15px;
+            padding: 5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 70%;
+            align-self: center;
+        }
+        #lower{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+        #pdet{
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(196, 229, 229);
+            outline: none;
+        }
+        #lastdiv{
+            display: flex;
+            flex-direction: column;
+        }
+        #lastdiv span{
+            margin-top: 8px;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 40%;
+            align-self: center;
+        }
+        #upper{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        #pdbtn{
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(196, 229, 229);
+            outline: none;
+            align-self: baseline;
+        }
+
+    </style>
+    
+    <div id="empid">
+        Employee ID:
+    </div>
+    
+    <div id="det">
+        <div id="lefter">
+            <svg style="margin-bottom: 20px;" width="272" height="294" viewBox="0 0 272 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="272" height="294" fill="#DADADA"/>
+                <ellipse cx="136" cy="91.5" rx="54" ry="55.5" fill="#959595"/>
+                <path d="M35.5 155.5L6 293L69.5 269H209L267.5 293L243.5 155.5H35.5Z" fill="#959595"/>
+            </svg>
+            <div id="upper">
+
+            </div>
+            <button id="pdbtn">Personal Details  
+                <svg style="transition-duration:200ms;" id="droparrow" height="20" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25.2975 35L50 1" stroke="black"/>
+                </svg>    
+            </button>
+            <div id="lower">
+        
+            </div>
+        </div>
+        <div id="righter">
+            <span style="font-size: 22px;">Organistaional Details</span>
+        </div>
+    </div>
+    <div id="lower">
+        
+    </div>
+
+</body>
+<script src="script3.js"></script>
+</html>

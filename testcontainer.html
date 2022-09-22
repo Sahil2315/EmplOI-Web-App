@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Employee Details</title>
+</head>
+<body>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+        body,html{
+            background-color: rgb(226, 241, 243);
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+}
+        #empid{
+            position: absolute;
+            left: 0;
+            top: 5%;
+            padding: 10px;
+            width: 250px;
+            font-size: 20px;
+            background-color: rgb(196, 229, 229);
+            box-shadow: 3px 3px 3px rgb(100, 100, 200);
+        }
+
+        #left{
+            float: left;
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            margin-top: 8%;
+            margin-left: 5%;
+            align-items: center;
+        }
+        #left span{
+            margin-top: 10px;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 70%;
+            align-self: center;
+        }
+        #left svg{
+            border-radius: 30px;
+        }
+        #right{
+            margin-top: 8%;
+            float: right;
+            width: 50%;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            margin-left: 5%;
+            align-items: center;
+        }
+        #right span{
+            margin-top: 10px;
+            padding: 5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 70%;
+            align-self: center;
+        }
+        #hiddet{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+        #pdet{
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(196, 229, 229);
+            outline: none;
+        }
+        #lastdiv{
+            display: flex;
+            flex-direction: column;
+        }
+        #lastdiv span{
+            margin-top: 8px;
+            padding: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(196, 229, 229);
+            border-radius: 3px;
+            font-size: 20px;
+            width: 40%;
+            align-self: center;
+        }
+    </style>
+
+    <div id="empid">
+        Employee ID: dev01201
+    </div>
+
+    <div id="left">
+        <svg style="margin-bottom: 20px;" width="272" height="294" viewBox="0 0 272 294" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="272" height="294" fill="#DADADA"/>
+            <ellipse cx="136" cy="91.5" rx="54" ry="55.5" fill="#959595"/>
+            <path d="M35.5 155.5L6 293L69.5 269H209L267.5 293L243.5 155.5H35.5Z" fill="#959595"/>
+        </svg>
+        
+        <span>Full Name: Rahul Tiwari</span>
+        <span>Date Of Birth: 12-1-1997</span>
+        <span>Gender: Male</span>
+        <span>Email ID: rahultx123@xyz.com</span>
+        
+                    
+    </div>
+
+    <div id="right">
+        <span>Department: </span>
+        <span>Job Title</span>
+        <span>Joining Date</span>
+        <span>Salary</span>
+        <span>Registration Key</span>
+        <span>Laptop ID</span>
+        <span>Leaves Remaining</span>
+    </div>
+    <div style="width: 100%; align-items: center;" id="lastdiv">
+        <div style=" width:100%; margin-top: 20px; align-items: center; justify-content: center;display: flex;flex-direction: column;align-items: center;">
+            <button id="pdet">Personal Details  
+                <svg style="transition-duration:200ms;" id="droparrow" height="20" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L25.2975 35L50 1" stroke="black"/>
+                </svg>    
+            </button>
+            <div id="hiddet">
+                <span>Phone Number: 1234567890</span>
+                <span>Current Address: XYXOKLADKADFGDF</span>
+                <span>Permanent Address: XYXOKLADKADFGDF</span>
+                <span>UPI ID: 112047205@agdf</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script3.js"></script>
+<script>
+    let pdet = document.getElementById('pdet')
+    let hiddet = document.getElementById('hiddet')
+    let droparrow = document.getElementById('droparrow')
+
+
+    let toggle = true
+    pdet.addEventListener('click', () => {
+        if(toggle){
+            hiddet.style.display = 'flex'
+            droparrow.style.transform = 'rotate(180deg)'
+            toggle = false
+        }
+        else{
+            hiddet.style.display = 'none'
+            droparrow.style.transform = 'rotate(0deg)'
+            toggle = true
+        }
+    } )
+</script>
+</html>
